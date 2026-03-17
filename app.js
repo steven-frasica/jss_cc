@@ -181,9 +181,89 @@ console.log(sumOfTwoNumbers(10, 20));
 
 // console.log(`Temperature is ${celsiusToFahrenheit(10)} degrees Fahrenheit`);
 
-const celsiusToFahrenheit = celsius => celsius * 1.8 + 32;
+const celsiusToFahrenheit = (celsius) => celsius * 1.8 + 32;
 
 console.log(`Temperature is ${celsiusToFahrenheit(10)} degrees Fahrenheit`);
 
 // ARRAYS
 
+// let item1 = 20
+// let item2 = 30
+// let item3 = 40
+// let item4 = 50
+// let item5 = 100
+
+// let arr = [20, 30, 40, 50, 100];
+// console.log(arr[0])
+
+// arr.length - 1 is last element of array
+
+// console.log(arr[arr.length - 1])
+
+// arr.push(200);
+
+// console.log(arr)
+
+// let newArr = arr.filter((element) => {
+//   console.log(element)
+// })
+
+// let newArr = arr.filter((element) => {
+//   console.log(element);
+//   if (element < 50) {
+//     return true;
+//   }
+// });
+
+// let newArr = arr.filter((element) => element < 50);
+// console.log(newArr);
+
+// let grades = ["A+", "A", "FAIL"];
+
+// let passingGrades = grades.filter((grade) => grade !== "FAIL");
+
+// console.log(passingGrades);
+
+// let newGrades = grades.filter((grade) => {
+//   return grade !== 'FAIL';
+// });
+
+// console.log(newGrades);
+
+
+// let grades = ['A+', 'A', 'FAIL']
+
+// create empty array
+// let goodGrades = []
+
+// for (let i = 0; i < grades.length; i++) {
+//   if (grades[i] !== 'FAIL')
+//     goodGrades.push(grades[i])
+// }
+
+// console.log(goodGrades);
+
+let arr = [1, 4, 9, 16]
+
+// turn each element into 5 in newArray
+let newArray = arr.map(element => 5)
+
+console.log(newArray)
+
+let dollars = [1, 5, 10, 3];
+
+// let centsArray = dollars.map((element) => {
+//   return element * 100;
+// })
+
+let centsArray = dollars.map(element => element * 100);
+
+console.log(centsArray);
+
+let cents = []
+
+for(let i = 0; i < dollars.length; i++) {
+  cents.push(dollars[i] * 100)
+};
+
+console.log('cents array', cents);

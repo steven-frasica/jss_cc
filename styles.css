@@ -1,0 +1,11 @@
+* {
+  color: green;
+}
+
+.dark-theme {
+  background-color: black;
+}
+
+.dark-theme * {
+  color: white;
+}
